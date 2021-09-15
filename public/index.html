@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      if('serviceWorker' in navigator){
+          navigator.serviceWorker.register('./sw.js' , {scope : '/'}).then(
+            function(registration) {
+              console.log('Service Worker Registered');
+            }
+          );
+          navigator.serviceWorker.ready.then(function(registration) {
+            console.log('service worker ready');
+          });
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <meta name="og:title" property="og:title" content="Traveligo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000"/>
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="language" content="ES">
+    <meta name="robots" content="index,follow" />
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <title>Flight Management(Major_Project)</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
